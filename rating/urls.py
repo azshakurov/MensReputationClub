@@ -1,7 +1,7 @@
 from django.urls import path, include
 from django.views.generic import ListView, DetailView
+from rating.views import RatingListView
 from rating.models import Rating
-from . import views
 
 
 urlpatterns = [

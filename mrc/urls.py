@@ -1,10 +1,10 @@
 from django.urls import path, include
 
-from . import views
+from mrc.views import index, ruls
 
 
 urlpatterns = [
-    path(r'', views.index, name='index'),
-    path(r'ruls/', views.ruls, name='ruls'),
+    path(r'', index, name='index'),
+    path(r'ruls/', ruls, name='ruls'),
 ]
 
