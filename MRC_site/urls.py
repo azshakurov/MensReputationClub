@@ -22,8 +22,8 @@ def get_path_name():
     """Collect names of path objects defined in all project urls.py.
     :return: {'name': 'url/of/path/object'}
     """
-    p_names = [k for k in get_resolver(None).reverse_dict.keys() if isinstance(k, str)]
-    return dict((pn, reverse(pn)) for pn in p_names)
+    path_names = [k for k in get_resolver(None).reverse_dict.keys() if isinstance(k, str)]
+    return dict((pn, reverse(pn)) for pn in path_names)
 
 
 urlpatterns = [
